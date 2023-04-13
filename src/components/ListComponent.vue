@@ -1,5 +1,7 @@
 <template>
     <div>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        
        <h1>Listados</h1>
      
       <ul >
@@ -10,7 +12,7 @@
             <!-- mandamos no el id sino la posicion del array-->
             ---<router-link :to="{name:'editarLista',params:{posicionEditar:key}}">Editar</router-link>
             <!--para eliminar no nececitamos rutas sino un boton y dar una funcion con clik y ya-->
-      <button @click="eliminar(a.id)">Eliminar</button>
+      <button class="btn btn-danger" @click="eliminar(a.id)">Eliminar</button>
            
             
         </li>

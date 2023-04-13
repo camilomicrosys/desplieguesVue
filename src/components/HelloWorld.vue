@@ -5,7 +5,7 @@
     
     <router-link :to="{name:'lista'}">Lista</router-link>
    
-
+    <router-link :to="{name:'listaUsers'}">Lista de usuarios</router-link>
     
 
     

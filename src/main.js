@@ -9,6 +9,11 @@ import ListComponent from '@/components/ListComponent'
 import EditComponent from '@/components/EditComponent'
 import CreateComponent from '@/components/CreateComponent'
 import BaseComponent from '@/components/BaseComponent'
+//esta es la parte para las rutas del crud
+import ListarComponent from '@/components/usuarios/ListarComponent'
+
+import EditarComponent from '@/components/usuarios/EditarComponent'
+
 
 
 
@@ -54,6 +59,15 @@ const routes=[
     },{
         path:'/lista/crear',component:CreateComponent,name:'crearLista'
         
+    },
+    //inicio proceso de users crud con api real
+    {
+        path:'/lista/users',component:ListarComponent,name:'listaUsers'
+        
+    },
+    //edicion de users
+    {
+        path:'/lista/users/:objetoEditar',component:EditarComponent,name:'editarUsers'
     }
 ]
 
